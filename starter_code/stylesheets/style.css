@@ -169,7 +169,7 @@ airbnb_logo
   background-color: white;
 }
 
-.try > p:first-child {
+.try > fragment > p:first-child {
   font-size: 1em;
   font-weight: bold;
   margin-bottom: 5px;
@@ -184,7 +184,7 @@ footer {
   border-top: 0.5px solid #bebebe;
 }
 
-footer > img {
+footer > fragment > img {
   width: 150px;
   margin-left: -20px;
 }
@@ -260,4 +260,211 @@ li:first-child {
 .legal_informations > div > div > i {
   color: #5b5e6d;
   height: 25px;
+}
+
+@media (min-width: 768px) {
+  .sigIn_input {
+    width: 50%;
+  }
+
+  .sigIn_btn {
+    width: 20%;
+  }
+
+  fragment {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  fragment > .sigIn_btn {
+    margin-left: 5px;
+  }
+
+  header > h1 {
+    font-size: 4em;
+    width: 100%;
+  }
+
+  header > img {
+    position: absolute;
+    bottom: 2%;
+    width: 60%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header > p {
+    font-size: 1.2em;
+    line-height: 30px;
+  }
+
+  .signIn_link {
+    text-align: left;
+    font-size: 1em;
+    margin-top: -5px;
+  }
+
+  .partners > button {
+    width: 25%;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+
+  .partners > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .try {
+    display: flex;
+    align-items: middle;
+  }
+
+  .try > fragment {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .try > p {
+    text-align: left;
+  }
+
+  .try > fragment > p:first-child {
+    font-weight: bolder;
+    font-size: 1.5em;
+    width: 100%;
+    text-align: left;
+    line-height: 50px;
+  }
+
+  .try > .sigIn_btn {
+    margin-left: 5px;
+    width: 40%;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+
+  footer > fragment {
+    display: flex;
+  }
+
+  footer > fragment > img {
+    width: 150px;
+    margin-left: -20px;
+    margin-top: -160px;
+  }
+
+  .general_information {
+    width: 100%;
+    margin-top: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+  }
+
+  .legal_informations {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .legal_informations > ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    font-weight: bold;
+    align-items: center;
+  }
+
+  .legal_informations > ul > li {
+    margin-top: 0;
+  }
+
+  .legal_informations > div {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+  }
+
+  .legal_informations > div > i {
+    margin: 0 10px;
+  }
+
+  .legal_informations > div > div {
+    margin-top: 0;
+  }
+
+  .legal_informations > div > div > span {
+    line-height: 20px;
+  }
+
+  .legal_informations > div > div > i {
+    height: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    height: 1000px;
+  }
+
+  header > img {
+    bottom: 0;
+  }
+
+  .partners > div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  nav {
+    align-items: flex-start;
+  }
+
+  nav > img {
+    width: 150px;
+  }
+
+  nav > ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav > ul > li:last-child {
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding: 8px;
+  }
+
+  .menu_icon {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+
+  header > h1,
+  header > p,
+  header > fragment {
+    margin-left: 50%;
+    position: relative;
+  }
+
+  header > img {
+    position: absolute;
+    width: 50%;
+    left: 0;
+    margin-left: 0;
+  }
 }
